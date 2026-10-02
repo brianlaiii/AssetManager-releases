@@ -1,5 +1,10 @@
 # Release Notes
 
+## 0.1.1
+
+- Uses macOS system certificates for secure GitHub update checks and downloads in Maya.
+- Keeps certificate and hostname verification enabled.
+
 ## 0.1.0
 
 - Initial macOS release for Maya 2024, 2026, and 2027.
