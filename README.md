@@ -4,7 +4,7 @@ A Maya tool for browsing, publishing, and reusing versioned assets.
 
 ## Download
 
-Download the installation ZIP from [GitHub Releases](https://github.com/brianlaiii/AssetManager-releases/releases).
+Download the installation ZIP from [GitHub Releases](https://github.com/brianlaiii/AssetManager-releases/releases/latest).
 The application includes its Python source under the MIT License.
 
 Use the named installation ZIP. GitHub's automatic Source code archives contain this release page and license.
