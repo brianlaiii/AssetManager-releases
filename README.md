@@ -4,15 +4,15 @@ A Maya tool for browsing, publishing, and reusing versioned assets.
 
 ## Download
 
-Choose your computer below. On the release page, open **Assets** and download the installation ZIP.
+Click the ZIP download for your computer:
 
 | Your computer | Download | Maya versions |
 | --- | --- | --- |
-| Mac | [Mac installation ZIP](https://github.com/brianlaiii/AssetManager-releases/releases/latest) — choose the file ending in `-macos.zip` | 2024, 2026, 2027 |
-| Windows | [Windows test installation ZIP](https://github.com/brianlaiii/AssetManager-releases/releases/tag/v0.1.2-beta.1) — choose the file ending in `-windows.zip` | Test targets: 2024, 2025, 2026, 2027 |
+| Mac | [Download for Mac (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.1/asset-manager-0.1.1-macos.zip) | 2024, 2026, 2027 |
+| Windows | [Download for Windows (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.2-beta.1/asset-manager-0.1.2-beta.1-windows.zip) | Test targets: 2024, 2025, 2026, 2027 |
 
 The ZIP is ready to use in Maya. You do not need GitHub login, Git, a separate Python installation, or a build step.
-Choose the named installation ZIP. GitHub's **Source code** downloads are not installation packages.
+Both links download the ready-to-install ZIP directly.
 
 Windows is currently a test version. Its Maya interface, asset operations, and renderer behavior still need testing in Windows Maya.
 Try it in a temporary project first. The stable Mac download remains available.
