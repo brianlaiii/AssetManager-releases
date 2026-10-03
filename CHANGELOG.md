@@ -1,5 +1,12 @@
 # Release Notes
 
+## 0.1.2-beta.1
+
+- Windows preview targeting Maya 2024, 2025, 2026, and 2027.
+- Includes readable Python source under the MIT License.
+- Windows Maya UI, asset workflows, and renderer behavior still need in-app verification.
+- Install this preview manually. Automatic updates continue to use stable releases.
+
 ## 0.1.1
 
 - Uses macOS system certificates for secure GitHub update checks and downloads in Maya.
