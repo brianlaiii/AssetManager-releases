@@ -15,6 +15,16 @@ The initial macOS release supports Maya 2024, 2026, and 2027.
 It uses Maya's included Python and Qt libraries. Maya must be installed separately.
 Geometry checks use their Python implementations. Native acceleration modules are not bundled.
 
+## Windows preview
+
+A [Windows preview](https://github.com/brianlaiii/AssetManager-releases/releases/tag/v0.1.2-beta.1) is available for testing with Maya 2024, 2025, 2026, and 2027.
+Windows Maya UI, asset operations, and renderer behavior still need in-app verification.
+This preview is installed manually. Automatic updates continue to use stable releases.
+The stable macOS download remains separate.
+
+Follow the installation steps below. Test in a temporary project first.
+Report the Maya version, application version, and any failed step through Issues.
+
 ## Install
 
 1. Download and extract the installation ZIP.
