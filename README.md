@@ -4,14 +4,14 @@ A Maya tool for browsing, publishing, and reusing versioned assets.
 
 ## Download
 
-**Asset Manager v0.1.2** — one release for Mac and Windows.
+**Asset Manager v0.1.3** — one release for Mac and Windows.
 
 Click the ZIP download for your computer:
 
 | Your computer | Download | Maya versions |
 | --- | --- | --- |
-| Mac | [Download for Mac (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.2/asset-manager-0.1.2-macos.zip) | 2024, 2026, 2027 |
-| Windows | [Download for Windows (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.2/asset-manager-0.1.2-windows.zip) | 2024, 2025, 2026, 2027 |
+| Mac | [Download for Mac (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.3/asset-manager-0.1.3-macos.zip) | 2024, 2026, 2027 |
+| Windows | [Download for Windows (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.3/asset-manager-0.1.3-windows.zip) | 2024, 2025, 2026, 2027 |
 
 The ZIP is ready to use in Maya. You do not need GitHub login, Git, a separate Python installation, or a build step.
 Both links download the ready-to-install ZIP directly.
@@ -105,6 +105,13 @@ Open **Settings > Updates** or **Help > Check for Updates**.
 Checks can also run automatically when Asset Manager opens.
 Your settings and project assets are kept separate. The previous version is retained.
 Test versions are installed manually and are not offered by automatic stable updates.
+
+## Arnold media previews
+
+Arnold media keeps raw EXR images separately from JPEG player previews.
+JPEG previews need an optional configured Python runtime with OpenImageIO and OpenColorIO.
+If that runtime is missing, the raw images are retained and the tool shows what is needed.
+Browsing, geometry publishing, and public updates do not need this extra runtime.
 
 ## Support
 
