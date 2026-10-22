@@ -1,5 +1,25 @@
 # Release Notes
 
+## 0.1.4
+
+- Added Settings > Problem Reports and Help > Report a Problem.
+- Describe a problem, preview the report, and export one ZIP to send privately to the person helping you. No account or automatic upload is required.
+- Reports include app, Maya, Qt, and system versions, recent retained Asset Manager actions, and observed errors.
+- Common credentials, email addresses, and absolute paths are filtered. Review the text before sharing. Scene files, textures, settings files, and screenshots are not attached.
+- Activity logs stay local and have a size limit. Recording starts when this version opens; older actions cannot be recovered.
+- Added Media Player close diagnostics to help investigate failures. This release does not claim to fix the reported Windows player close issue.
+- Settings scrolls to keep the report panel reachable in smaller windows.
+
+Download the ZIP for your computer:
+
+- [Download for Mac](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.4/asset-manager-0.1.4-macos.zip)
+- [Download for Windows](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.4/asset-manager-0.1.4-windows.zip)
+- [Installation guide](https://github.com/brianlaiii/AssetManager-releases#install-on-windows)
+
+The report flow has been checked in Mac Maya 2024 and with Qt5 and Qt6 runtimes.
+Automated CI was unavailable for this release. Native Windows package, diagnostics, and updater checks were not run for this version.
+The Windows Maya interface, asset operations, and rendering have not yet been tested in Maya.
+
 ## 0.1.3
 
 - Publish saves native Maya geometry without rerunning validation checks.
