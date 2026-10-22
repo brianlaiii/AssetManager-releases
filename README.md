@@ -4,19 +4,20 @@ A Maya tool for browsing, publishing, and reusing versioned assets.
 
 ## Download
 
-**Asset Manager v0.1.3** — one release for Mac and Windows.
+**Asset Manager v0.1.4** — one release for Mac and Windows.
 
 Click the ZIP download for your computer:
 
 | Your computer | Download | Maya versions |
 | --- | --- | --- |
-| Mac | [Download for Mac (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.3/asset-manager-0.1.3-macos.zip) | 2024, 2026, 2027 |
-| Windows | [Download for Windows (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.3/asset-manager-0.1.3-windows.zip) | 2024, 2025, 2026, 2027 |
+| Mac | [Download for Mac (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.4/asset-manager-0.1.4-macos.zip) | 2024, 2026, 2027 |
+| Windows | [Download for Windows (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.4/asset-manager-0.1.4-windows.zip) | 2024, 2025, 2026, 2027 |
 
 The ZIP is ready to use in Maya. You do not need GitHub login, Git, a separate Python installation, or a build step.
 Both links download the ready-to-install ZIP directly.
 
-Mac has been tested in Maya. Windows package and updater checks have passed.
+The report flow has been checked in Mac Maya 2024 and with Qt5 and Qt6 runtimes.
+Automated CI was unavailable for this release. This version has not been verified on native Windows.
 The Windows Maya interface, asset operations, and rendering have not yet been tested in Maya.
 
 ## Install on Windows
@@ -115,7 +116,20 @@ Browsing, geometry publishing, and public updates do not need this extra runtime
 
 ## Support
 
-Report issues through this repository's Issues page. Include your Maya version, Asset Manager version, and the step that failed.
+Open **Settings > Problem Reports > Report a Problem**, or **Help > Report a Problem**.
+
+1. Describe what happened and what you expected.
+2. Click **Preview Report** and review the text before sharing it.
+3. Click **Export ZIP** and choose where to save it.
+4. Send the ZIP privately to the person helping you. **Show in Folder** opens its location.
+
+The report includes app and system versions, recent Asset Manager activity, and observed errors.
+Common credentials, email addresses, and absolute paths are filtered. Review your description and report for other private information.
+Scene files, textures, settings files, and screenshots are not attached.
+Activity is retained locally with a size limit, starting when this version opens. Earlier actions may be unavailable.
+Export does not require a GitHub account and does not send or upload anything automatically.
+
+You can also report issues through this repository's Issues page. Avoid posting diagnostic reports publicly when they contain private information.
 
 ## License
 
