@@ -1,5 +1,24 @@
 # Release Notes
 
+## 0.1.5
+
+- Improved Media Player close handling and added **File > Close** as another way to close the player.
+- Escape and other close paths now share annotation confirmation and cleanup. Save, Discard, and Cancel protect unsaved annotations, including text still being edited. Escape inside the text editor continues to cancel that edit.
+- Closing stops playback and cache timers. Delayed frame and gamma work cannot restart a closed player's caches.
+- Closing during an MP4 export stops the export, releases its temporary files after the process exits, and avoids a completion popup for the closed player.
+- Added Windows native close-command handling while retaining the normal tool window.
+- Problem reports now distinguish observed Windows close-button input, native close commands, dialog close requests, annotation cancellation, and cleanup stages.
+
+Download the ZIP for your computer:
+
+- [Download for Mac](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.5/asset-manager-0.1.5-macos.zip)
+- [Download for Windows](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.5/asset-manager-0.1.5-windows.zip)
+- [Installation guide](https://github.com/brianlaiii/AssetManager-releases#install-on-windows)
+
+Player close checks pass with the Mac Maya 2024, 2026, and 2027 Qt runtimes. Actual File > Close, titlebar close, Escape, annotation Cancel/Discard, and continued main-window use were checked in Mac Maya 2024.
+Automated CI was unavailable for this release. Native Windows package and updater checks have not been run for this version.
+The original Windows titlebar X failure has not been reproduced or verified as fixed on Windows Maya. The Windows Maya interface, asset operations, and rendering remain untested in Maya.
+
 ## 0.1.4
 
 - Added Settings > Problem Reports and Help > Report a Problem.
