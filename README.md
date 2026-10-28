@@ -4,20 +4,20 @@ A Maya tool for browsing, publishing, and reusing versioned assets.
 
 ## Download
 
-**Asset Manager v0.1.5** — one release for Mac and Windows.
+**Asset Manager v0.1.6** — one release for Mac and Windows.
 
 Click the ZIP download for your computer:
 
 | Your computer | Download | Maya versions |
 | --- | --- | --- |
-| Mac | [Download for Mac (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.5/asset-manager-0.1.5-macos.zip) | 2024, 2026, 2027 |
-| Windows | [Download for Windows (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.5/asset-manager-0.1.5-windows.zip) | 2024, 2025, 2026, 2027 |
+| Mac | [Download for Mac (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.6/asset-manager-0.1.6-macos.zip) | 2024, 2026, 2027 |
+| Windows | [Download for Windows (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.6/asset-manager-0.1.6-windows.zip) | 2024, 2025, 2026, 2027 |
 
 The ZIP is ready to use in Maya. You do not need GitHub login, Git, a separate Python installation, or a build step.
 Both links download the ready-to-install ZIP directly.
 
-Media Player close checks pass with the Mac Maya 2024, 2026, and 2027 Qt runtimes, with actual window interactions checked in Mac Maya 2024.
-This release improves Windows close handling, but the original Windows titlebar X failure has not been reproduced or verified as fixed on Windows Maya.
+Media ordering and Manage refresh checks pass with the Mac Maya 2024, 2026, and 2027 Qt runtimes. This version fixes refresh errors from mixed or missing media publish dates.
+Earlier Media Player close improvements remain included. The original Windows titlebar X failure has not been reproduced or verified as fixed on Windows Maya.
 Automated CI was unavailable for this release. Native Windows package and updater checks have not been run for this version.
 The Windows Maya interface, asset operations, and rendering have not yet been tested in Maya.
 
