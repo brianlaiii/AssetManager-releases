@@ -1,5 +1,21 @@
 # Release Notes
 
+## 0.1.6
+
+- Fixed Manage and Media refresh errors when published clips mix timezone formats or have missing publish dates.
+- Clip numbering keeps chronological order without changing existing media manifests.
+- Fixed the standalone output helper error that stopped local development builds at startup.
+
+Download the ZIP for your computer:
+
+- [Download for Mac](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.6/asset-manager-0.1.6-macos.zip)
+- [Download for Windows](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.6/asset-manager-0.1.6-windows.zip)
+- [Installation guide](https://github.com/brianlaiii/AssetManager-releases#install-on-windows)
+
+Media ordering and Manage refresh checks pass with the Mac Maya 2024, 2026, and 2027 Qt runtimes. A complete local Mac development build also passes.
+Automated CI was unavailable for this release. Native Windows package and updater checks have not been run for this version.
+The Windows Maya interface, asset operations, and rendering remain untested. The original Windows Media Player titlebar X failure remains unverified on Windows Maya.
+
 ## 0.1.5
 
 - Improved Media Player close handling and added **File > Close** as another way to close the player.
