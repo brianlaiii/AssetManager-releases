@@ -1,5 +1,23 @@
 # Release Notes
 
+## 0.1.7
+
+- Improved automatic Python discovery for Arnold JPEG previews, including standard Mac/Windows installation locations and Windows Python launchers.
+- Preview checks now validate Python, required packages, and the saved color transform before the first Arnold frame. Missing setup gives clear instructions instead of failing after rendering.
+- Preview workers keep Maya's Python libraries separate and stop cleanly if startup fails.
+- The Arnold dialog now shows the selected frame range, count, and step. Inactive Frame List fields are hidden, and invalid lists cannot start rendering.
+- Retrying JPEG previews uses existing EXRs and clears the earlier preview error after success.
+
+Download the ZIP for your computer:
+
+- [Download for Mac](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.7/asset-manager-0.1.7-macos.zip)
+- [Download for Windows](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.7/asset-manager-0.1.7-windows.zip)
+- [Installation guide](https://github.com/brianlaiii/AssetManager-releases#install-on-windows)
+
+Arnold preview conversion and dialog interaction were checked in Mac Maya 2024. Frame-mode checks pass with Qt5 and Qt6 runtimes.
+Native Mac and Windows package/updater checks pass on Python 3.10, 3.11, and 3.13, including activation, rollback, retained settings, and anonymous Windows downloads.
+The Windows Maya interface, asset operations, and rendering remain untested. JPEG previews still require the one-time setup described in the installation guide.
+
 ## 0.1.6
 
 - Fixed Manage and Media refresh errors when published clips mix timezone formats or have missing publish dates.
