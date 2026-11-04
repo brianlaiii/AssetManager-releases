@@ -4,21 +4,22 @@ A Maya tool for browsing, publishing, and reusing versioned assets.
 
 ## Download
 
-**Asset Manager v0.1.6** — one release for Mac and Windows.
+**Asset Manager v0.1.7** — one release for Mac and Windows.
 
 Click the ZIP download for your computer:
 
 | Your computer | Download | Maya versions |
 | --- | --- | --- |
-| Mac | [Download for Mac (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.6/asset-manager-0.1.6-macos.zip) | 2024, 2026, 2027 |
-| Windows | [Download for Windows (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.6/asset-manager-0.1.6-windows.zip) | 2024, 2025, 2026, 2027 |
+| Mac | [Download for Mac (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.7/asset-manager-0.1.7-macos.zip) | 2024, 2026, 2027 |
+| Windows | [Download for Windows (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.7/asset-manager-0.1.7-windows.zip) | 2024, 2025, 2026, 2027 |
 
-The ZIP is ready to use in Maya. You do not need GitHub login, Git, a separate Python installation, or a build step.
+The ZIP is ready for basic browsing and publishing in Maya. You do not need GitHub login, Git, a separate Python installation, or a build step for those features. Arnold JPEG previews have an additional one-time setup described below.
 Both links download the ready-to-install ZIP directly.
 
-Media ordering and Manage refresh checks pass with the Mac Maya 2024, 2026, and 2027 Qt runtimes. This version fixes refresh errors from mixed or missing media publish dates.
+This version improves Python discovery for Arnold JPEG previews and checks preview readiness before the first render frame. The render dialog now shows the actual selected frame range and count.
+Arnold preview conversion and dialog interaction were checked in Mac Maya 2024. Frame-mode checks also pass with Qt5 and Qt6 runtimes.
 Earlier Media Player close improvements remain included. The original Windows titlebar X failure has not been reproduced or verified as fixed on Windows Maya.
-Automated CI was unavailable for this release. Native Windows package and updater checks have not been run for this version.
+Native Mac and Windows package/updater checks pass on Python 3.10, 3.11, and 3.13, including activation, rollback, retained settings, and anonymous Windows downloads.
 The Windows Maya interface, asset operations, and rendering have not yet been tested in Maya.
 
 ## Install on Windows
@@ -111,8 +112,14 @@ Test versions are installed manually and are not offered by automatic stable upd
 ## Arnold media previews
 
 Arnold media keeps raw EXR images separately from JPEG player previews.
-JPEG previews need an optional configured Python runtime with OpenImageIO and OpenColorIO.
-If that runtime is missing, the raw images are retained and the tool shows what is needed.
+JPEG previews need Python 3.10 through 3.14 with OpenImageIO, OpenColorIO, and NumPy. Standard Python installations are found automatically, including when Maya cannot find them through PATH.
+
+1. Choose **Media > Arnold Render** and select your frames. **Frames to Render** shows the selected range and count.
+2. If setup is needed, the tool stops before rendering and explains what is missing. If Python is missing, install it from [Python.org](https://www.python.org/downloads/), then try again.
+3. If packages are missing, copy the setup command from the message. On Mac, run it in **Terminal**. On Windows, run it in **PowerShell**. Do this once, then try Arnold Render again.
+
+Asset Manager does not install software automatically. Packages are kept in a separate user folder for each Python version.
+For an older job that already has EXR images, finish setup and choose **Media > Open Recent Tmp Media > Retry JPEG Previews**. This makes the missing JPEGs without rerendering.
 Browsing, geometry publishing, and public updates do not need this extra runtime.
 
 ## Support
