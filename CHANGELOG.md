@@ -1,5 +1,19 @@
 # Release Notes
 
+## 0.1.8
+
+- Arnold JPEG previews use the Python and image tools supplied with Maya, without a separate package setup.
+- MP4 export uses macOS or Windows system encoding when FFmpeg is unavailable. Existing FFmpeg installations continue to use the previous encoder.
+- Native MP4 exports retain frame timing, annotations and available timing metadata. System encoders can differ in quality from FFmpeg.
+
+Download the ZIP for your computer:
+
+- [Download for Mac](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.8/asset-manager-0.1.8-macos.zip)
+- [Download for Windows](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.8/asset-manager-0.1.8-windows.zip)
+- [Installation guide](https://github.com/brianlaiii/AssetManager-releases#install-on-windows)
+
+Windows Maya interaction, Arnold rendering and native MP4 export in Maya remain unverified. The Windows system encoder is checked separately in CI.
+
 ## 0.1.7
 
 - Improved automatic Python discovery for Arnold JPEG previews, including standard Mac/Windows installation locations and Windows Python launchers.
