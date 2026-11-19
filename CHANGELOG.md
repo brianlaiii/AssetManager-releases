@@ -1,5 +1,20 @@
 # Release Notes
 
+## 0.1.9
+
+- The Media Player opens Arnold clips in **Auto** and repairs missing or damaged JPEGs from existing EXRs in the background. It prioritizes the current frame and reuses repaired JPEGs on reopen.
+- Repaired previews are saved with writable temporary jobs. Published or locked clips use the local disk cache. The Media List updates JPEG counts and labels local previews.
+- Completed EXRs stay available for playback and publish when JPEG generation fails. Render identity and settings are saved before capture.
+- **View > Image Source** offers Auto, JPEG Preview, and Original EXR with the saved render view.
+
+Download the ZIP for your computer:
+
+- [Download for Mac](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.9/asset-manager-0.1.9-macos.zip)
+- [Download for Windows](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.9/asset-manager-0.1.9-windows.zip)
+- [Installation guide](https://github.com/brianlaiii/AssetManager-releases#install-on-windows)
+
+Auto repair and cache reuse were checked in Mac Maya 2024. Windows Maya, OneDrive rendering, and Windows playback speed remain unverified. The first conversion with Maya's built-in worker can take time.
+
 ## 0.1.8
 
 - Arnold JPEG previews use the Python and image tools supplied with Maya, without a separate package setup.
