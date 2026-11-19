@@ -4,23 +4,20 @@ A Maya tool for browsing, publishing, and reusing versioned assets.
 
 ## Download
 
-**Asset Manager v0.1.8** — one release for Mac and Windows.
+**Asset Manager v0.1.9** for Mac and Windows.
 
 Click the ZIP download for your computer:
 
 | Your computer | Download | Maya versions |
 | --- | --- | --- |
-| Mac | [Download for Mac (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.8/asset-manager-0.1.8-macos.zip) | 2024, 2026, 2027 |
-| Windows | [Download for Windows (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.8/asset-manager-0.1.8-windows.zip) | 2024, 2025, 2026, 2027 |
+| Mac | [Download for Mac (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.9/asset-manager-0.1.9-macos.zip) | 2024, 2026, 2027 |
+| Windows | [Download for Windows (.zip)](https://github.com/brianlaiii/AssetManager-releases/releases/download/v0.1.9/asset-manager-0.1.9-windows.zip) | 2024, 2025, 2026, 2027 |
 
 The ZIP is ready to use in Maya. You do not need GitHub login, Git, a separate Python installation, or a build step.
 Both links download the ready-to-install ZIP directly.
 
-This version uses Maya's own tools for Arnold JPEG previews and provides system MP4 encoding when FFmpeg is unavailable.
-Arnold preview conversion has been checked with Mac Maya 2024, 2026 and 2027. System MP4 encoding can differ in quality from FFmpeg.
-Earlier Media Player close improvements remain included. The original Windows titlebar X failure has not been reproduced or verified as fixed on Windows Maya.
-Native Windows package/updater checks pass on Python 3.10, 3.11, and 3.13. Native Mac package/updater checks pass on Python 3.11 and 3.13. These checks cover activation, rollback, retained settings, and anonymous Windows downloads.
-The Windows Maya interface, asset operations, and rendering have not yet been tested in Maya.
+This version repairs missing or damaged Arnold JPEG previews from existing EXRs when you open a clip. It updates the JPEG count in the Media List as previews become available.
+Auto repair and cache reuse were checked in Mac Maya 2024. Windows Maya, OneDrive rendering, and Windows playback speed remain unverified.
 
 ## Install on Windows
 
@@ -114,8 +111,9 @@ Test versions are installed manually and are not offered by automatic stable upd
 Arnold media keeps raw EXR images separately from JPEG player previews.
 Choose **Media > Arnold Render** and select your frames. **Frames to Render** shows the selected range and count. JPEG previews use the Python and image tools supplied with Maya; no separate package installation is needed.
 
-For an older job that already has EXR images, choose **Media > Open Recent Tmp Media > Retry JPEG Previews**. This makes the missing JPEGs without rerendering.
-Browsing, geometry publishing, and public updates do not need this extra runtime.
+Open an Arnold clip with **View > Image Source > Auto** to repair previews in the background. Auto prioritizes the current frame and uses the saved render view. Writable temporary jobs save repaired previews beside the EXRs. Published and locked clips use a local disk cache. Reopening reuses the JPEGs already repaired. The first pass can take time with Maya's built-in converter.
+
+Choose **JPEG Preview** to review JPEGs or **Original EXR** to read the source images directly. For a temporary job, **Media > Open Recent Tmp Media > Retry JPEG Previews** can also rebuild previews from existing EXRs.
 
 ## Support
 
